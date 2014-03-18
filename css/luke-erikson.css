@@ -32,6 +32,7 @@ footer {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	margin: 80px 0 30px;
+	clear: both;
 }
 
 p {
@@ -47,9 +48,9 @@ p {
 }
 
 #family-portrait {
-	-webkit-filter: grayscale(1); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%);
+/*	-webkit-filter: grayscale(1); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%);
 	filter: gray; filter: grayscale(100%);
-	filter: url(desaturate.svg#greyscale);
+	filter: url(desaturate.svg#greyscale);*/
 
 /*	border-radius: 200px;
 	-webkit-border-radius: 200px;
@@ -58,11 +59,11 @@ p {
 	border:5px solid;
 }
 
-figure {
+#figure {
 	text-align: center;
 }
 
-figcaption {
+#figcap {
 	font-style: italic;
 }
 
@@ -114,3 +115,35 @@ a:active {
 /*#imagebox {
 	padding-top: 40px;
 }*/
+
+/* ///// media query ///// */
+
+@media only screen and (max-width: 960px) {
+.container {
+width: 90%;
+}
+}
+
+@media only screen and (max-width: 800px) {
+.col-1 {
+float: none;
+width: 100%;
+
+}
+
+.col-2 {
+float: none;
+width: 100%;
+}
+
+img {
+	min-width: 50px;
+	max-width: 250px;
+}
+
+[class*="col-"] {
+  margin: 0%;
+}
+
+
+}
